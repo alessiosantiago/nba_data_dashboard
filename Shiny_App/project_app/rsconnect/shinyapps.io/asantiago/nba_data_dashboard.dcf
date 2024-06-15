@@ -1,0 +1,12 @@
+name: nba_data_dashboard
+title: nba_data_dashboard
+username: asantiago
+account: asantiago
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12185259
+bundleId: 8745012
+url: https://asantiago.shinyapps.io/nba_data_dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

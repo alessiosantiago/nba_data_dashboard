@@ -1,0 +1,283 @@
+<div>
+        <h4>Introduction:</h4>
+        <p>
+        As an avid enthusiast of the NBA, I have always been deeply intrigued by
+        the intricate statistics and evolving trends that define the game across
+        different eras. My fascination comes not only from a love of basketball
+        but also from a desire to understand how the sport has evolved over
+        time, particularly in eras that I did not have the opportunity to
+        witness firsthand. Exploring historical data allows me to uncover the
+        nuances of team performance, tracking how key metrics have shifted and
+        shaped the game we see today. This dashboard serves as a gateway to
+        delve into these insights, offering a dynamic exploration of NBA
+        statistics and trends spanning decades.
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        Throughout this dashboard, I am aiming to explore various facets of NBA
+        statistics, focusing on uncovering insights that highlight the game's
+        evolution. From tracking NBA teams' standings over time to visualizing
+        the impact of three-point shooting and points per game distributions
+        across different eras, each visualization offers a unique perspective on
+        the NBA’s changing landscape. By using these interactive tools and
+        visualizations, I aim to provide a detailed exploration of these metrics
+        and their implications on team success and strategic gameplay.
+    </p>
+</div>
+<div>
+        <h4>Data Collection:</h4>
+        <p>
+        The primary source of data that I chose for this project is the "NBA
+        Team Per Game Stats" dataset obtained from Kaggle, which can be accessed
+        via this
+        <a
+            href="https://www.kaggle.com/datasets/jpsdev/19802019-nba-team-stats?resource=download&amp;select=renamed_teams.csv"
+            target="_blank"
+            rel="noreferrer noopener"
+        >
+            link
+        </a>
+        and can be found in the references section at the bottom. The dataset
+        contains the "Team Per Game" stats of NBA teams from 1980-2019 season,
+        and includes data such as Points (PTS), Assists (AST), Steals (STL),
+        Three-Pointers Made (3PM), and other key per game statistics. Out of all
+        the columns, I chose to eliminate the ones that did not seem relevant to
+        team performance and strategic gameplay in the NBA, like “minutes
+        played”, “games played”, and “fouls per game”. The columns I chose aimed
+        to provide insights into how these metrics have evolved over time and
+        their potential impact on team success.
+    </p>
+</div>
+<div>
+        <h4>Team Rank:</h4> 
+         <p>
+        The Team Rank tab provides a comprehensive view of NBA team standings
+        over the decades from 1980 to 2019 through a line plot. This interactive
+        visualization, powered by Plotly and crafted using ggplot2 in R, allows
+        users to select a specific team and adjust the timeline to explore how
+        their ranking out of 30 evolved over different seasons. By interacting
+        with the plot, users gain insights into the fluctuating performance of
+        teams across various eras, identifying periods of dominance, rebuilding
+        phases, and shifts in competitiveness. The use of ggplot2 facilitated
+        the creation of these line plots, while Plotly enhanced these static
+        plots into dynamic visualizations, enabling interactive exploration of
+        team rankings. It was particularly interesting to note how the strength
+        of teams has fluctuated over the years, with clear periods of dominance
+        by certain teams in different eras like the Celtics, Bulls, and Lakers
+        in the 80s-90s and my Golden State Warriors in the late half of the
+        2010s. Additionally, the analysis revealed that every team has
+        experienced phases of both high and low rankings, highlighting the
+        cyclical nature of team performance in the NBA. This tool not only
+        offers a historical perspective on team rankings but also serves as a
+        strategic resource for coaches, analysts, and team management to assess
+        past performance trends and strategize for future seasons. For NBA
+        enthusiasts, it enhances engagement by enabling them to revisit
+        memorable seasons and uncover lesser-known aspects of their favorite
+        team's journey in the league.
+    </p>
+</div>
+<div>
+        <h4>Three Pointers:</h4>
+         <p>
+        The Three Point Shooting tab offers insights into three-point shooting
+        statistics for NBA teams from 1980 to 2019. This interactive dashboard
+        allows users to select a team and visualize the trends in three-pointers
+        made (3PM) and attempted (3PA) over different seasons. The
+        visualization, powered by Plotly and ggplot2, illustrates how every team
+        has embraced the three-point revolution, adapting strategies to
+        incorporate more three-point attempts into their gameplay. It was
+        shocking for me to see that most teams in the 80s only attempted around
+        one three pointer per game, while in 2019 most teams are attempting over
+        30 per game. This evolution reflects a league-wide trend where teams and
+        coaches have capitalized on the efficiency and strategic advantages
+        offered by three-point shooting. The interactive features of Plotly
+        enhance user engagement by enabling detailed exploration of historical
+        data points, offering insights into the transformative impact of the
+        three-point shot on NBA gameplay and strategy.
+    </p>
+</div>
+<div>
+        <h4>Points Per Game: </h4>
+        <p>
+        The Points Per Game tab provides an in-depth examination of the
+        league-wide distribution of points scored per game in the NBA, covering
+        data from 1980 to 2019. This interactive dashboard allows users to
+        select a specific year from the dropdown menu and visualize the
+        distribution of PPG across all teams through dynamic boxplots. Utilizing
+        Plotly and ggplot2, the visualization offers a detailed perspective on
+        how PPG has evolved over different eras in NBA history. Each boxplot
+        represents the distribution of points scored by teams in the chosen
+        year, offering insights into scoring trends and disparities within the
+        league. The integration of tooltips in Plotly enriches user interaction
+        by providing comprehensive details for each data point, including
+        team-specific PPG values and contextual information. The dashboard
+        revealed significant trends in scoring patterns across decades. It was
+        particularly surprising to observe that PPG averaged around the 105-115
+        range in the 1980s and early 1990s, reflecting a high-scoring era in the
+        NBA. However, starting from the mid 90s to the 2010s, there was a
+        noticeable decline, with PPG dropping to the 95-100 range for a period.
+        This trend began to reverse around 2014, coinciding with the rise of the
+        three-point revolution catalyzed by teams like the Golden State Warriors
+        and players like Stephen Curry and we saw it rise once again to the
+        105-115 range. These findings show the transformative impact of
+        strategic shifts in gameplay, such as the emphasis on three-point
+        shooting, and overall scoring dynamics in the league. The dashboard not
+        only offers historical insights into scoring trends but also serves as a
+        valuable resource for analyzing the evolution of offensive strategies
+        and their implications for team performance in the NBA.
+    </p>
+</div>
+<div>
+        <h4>Key Stats Impacting Team Rank:</h4>
+        <p>
+        The Key Stats Impacting Team Rank tab offers a comprehensive exploration
+        of how various statistical metrics influence team standings across
+        different eras. This interactive dashboard enables users to select a
+        decade and a statistical variable from dropdown menus to visualize the
+        relationship between the chosen metric and team rank through
+        scatterplots with regression lines.
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        Powered by Plotly and ggplot2, the visualization dynamically illustrates
+        trends and correlations derived from NBA team data spanning multiple
+        decades. Each scatterplot showcases data points representing teams'
+        statistical performance in the selected decade, with tooltips providing
+        detailed insights into individual team ranks and statistical values.
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        Furthermore, the integration of regression lines in the scatterplots
+        facilitated a deeper understanding of the statistical relationships.
+        These lines highlighted trends and provided statistical modeling of how
+        changes in specific metrics correlated with fluctuations in team ranks.
+        The linear models fitted to the data allowed for quantitative
+        assessments of the strength and direction of these relationships,
+        offering valuable insights for teams, coaches, and analysts seeking to
+        optimize performance strategies.
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        As an avid NBA enthusiast, exploring the Key Stats impacting Team Rank
+        tab has been the most captivating aspect of this dashboard. It provided
+        a unique opportunity to delve into how various statistics have
+        influenced team rankings throughout different eras of the NBA.
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        1980s-1990s:
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        In the early decades, Field Goal Percentage (FG%) emerged as a critical
+        factor influencing team rankings. Teams with higher FG% tended to
+        achieve better ranks, reflecting the importance of efficiency in
+        scoring. The significance of Three-Pointers Made (3PM) was minimal
+        during this period, while Two-Pointers Made (2PM) held substantial
+        weight. Rebounds and Assists also played pivotal roles, indicating a
+        strong emphasis on team play and offensive efficiency. Conversely,
+        Steals, Blocks, and Turnovers showed negligible correlations with team
+        rank, suggesting that defensive metrics were less crucial compared to
+        offensive performance.
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        1990s-2000s:
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        During the transition into the new millennium, FG% continued to be a
+        decisive factor in team rankings. Interestingly, both 3PM and 2PM were
+        less influential, signaling a period where shot quality rather than
+        total makes drove success. Steals became more significant, suggesting a
+        shift towards a more defensively oriented era. Notably, Turnovers became
+        more detrimental to team rankings compared to the previous decade,
+        underscoring the growing importance of ball security. Points scored
+        showed a less steep relationship with team rank, reinforcing the era's
+        emphasis on defensive strategies and efficient scoring opportunities.
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        2000s-2010s:
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        Moving into the 2000s and 2010s, FG% remained a critical metric, but the
+        rise of 3PM and 2PM indicated a shift towards a more balanced offensive
+        approach. Free Throws (FT) and Rebounds exhibited decreased
+        significance, while the impact of Assists notably diminished, suggesting
+        a trend towards isolation-heavy playstyles led by individual star
+        players like Kobe, Carmelo, and Tracy Mcgrady. Steals and Blocks became
+        less influential, reflecting a decreased emphasis on traditional
+        defensive metrics, possibly due to changes in game pace and offensive
+        strategies. Turnovers became even more detrimental to team rankings,
+        highlighting the evolving pace and transition-oriented style of play.
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        2010s-2020s:
+    </p>
+</div>
+<div>
+    <p lang="EN-US">
+        In the most recent decade, FG% continued to be a crucial determinant of
+        team success. However, the prominence of 3PM surged, surpassing 2PM and
+        FT in significance, indicating the widespread adoption of the
+        three-point shot as a strategic advantage. Rebounds saw reduced
+        importance, while Assists regained relevance, suggesting a return to
+        team-oriented playstyles. Both Blocks and Steals also showed a notable
+        impact, emphasizing the importance of disruptive defensive play, and
+        indicative of the "3-and-D" era where defensive versatility and
+        three-point shooting became paramount.  Turnovers, while still
+        significant, showed a slight decrease in importance compared to the
+        previous decade, aligning with the faster pace and emphasis on offensive
+        efficiency.
+    </p>
+</div>
+<div>
+        <h4>Conclusion: </h4>
+        <p>
+        This exploration of NBA statistics from 1980 to 2019 has provided
+        valuable insights into the game's evolution and the factors influencing
+        team success. By analyzing team performance metrics like points per
+        game, three-pointers made and attempted, and other key statistics, we've
+        uncovered significant trends and shifts in gameplay strategies. Our
+        interactive visualizations, powered by Plotly and ggplot2, highlight the
+        increased importance of three-point shooting in the modern era and the
+        evolving significance of metrics like field goal percentage, assists,
+        and defensive stats. Our findings reveal how strategic adaptations have
+        continually reshaped the NBA's competitive landscape. This project
+        enhances our understanding of basketball history and provides valuable
+        perspectives for future analysis and strategic planning. By making these
+        data and visualizations accessible, we aim to contribute to the ongoing
+        discourse among NBA fans, analysts, and professionals, creating a deeper
+        appreciation for the game's ever-changing landscape.
+    </p>
+</div>
+<div>
+        <h4>Bibliography: </h4>
+        <p>
+        Pablo, Jon. "1980-2019 NBA Team Stats." Kaggle, 2019,
+        <a
+            href="https://www.kaggle.com/datasets/jpsdev/19802019-nba-team-stats/data"
+            target="_blank"
+            rel="noreferrer noopener"
+        >
+            www.kaggle.com/datasets/jpsdev/19802019-nba-team-stats?resource=download&amp;select=renamed_teams.csv
+        </a>
+        . Accessed 14 June 2024.
+    </p>
+</div>
+<div>
+</div>
